@@ -9,7 +9,7 @@ using System.Collections;
 
 namespace UITests
 {
-    [TestFixture("Chrome")]
+    //[TestFixture("Chrome")]
     [TestFixture("Firefox")]
     [TestFixture("IE")]
     public class HomePageTest
@@ -149,7 +149,7 @@ namespace UITests
             // IJavaScriptExecutor enables us to execute JavaScript code during the tests.
             IJavaScriptExecutor js = driver as IJavaScriptExecutor;
 
-            // Through JavaScript, run the click() method on the underlying HTML object.
+            // Through JavaScript, run the click() method on the underlying HTML object. Please use this to click
             js.ExecuteScript("arguments[0].click();", element);
         }
     }
