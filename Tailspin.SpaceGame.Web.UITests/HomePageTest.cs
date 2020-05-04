@@ -151,6 +151,7 @@ namespace UITests
 
             // Through JavaScript, run the click() method on the underlying HTML object.
             js.ExecuteScript("arguments[0].click();", element);
+            
         }
     }
 }
